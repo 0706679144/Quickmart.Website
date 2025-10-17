@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us | Quickmart Supermarket</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(79, 167, 197);
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color: rgb(139, 222, 139);
+                color: rgb(91, 54, 223);
+                text-align: center;
+                padding: 20px 0;
+            }
+            nav a{
+                color:black;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            nav a:hover{
+text-decoration: underline;
+
+            }
+            .contact{
+                max-width: 1500;
+                background-color: rgb(232, 228, 223);
+                margin:  auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .contact h2{
+                text-align: center;
+                color: #ca4444;
+            }
+            label{
+                display: block;
+                margin-top: 15px;
+                color:#825cc9;
+                font-weight: bold;
+            }
+            input,textarea {
+                width: 50;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 5px;
+                border:1px solid #cfcbcb;
+                font-size: 16px;
+            }
+            input:focus, textarea:focus{
+border-color: #b30000;
+outline: none;
+box-shadow: 0 0 5px rgba(179,0,0,0.3);
+            }
+            button{
+                background-color: #b30000;
+                color: antiquewhite;
+                padding: 12px 20px;
+                border: none;
+                margin-top: 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                width: 20%;
+            }
+            button:hover{
+                background-color: #990000;
+            }
+            footer{
+                text-align: center;
+                padding: 10px;
+                background-color: #b30000;
+                color: antiquewhite;
+                margin-top: 40px;
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+        <h1>Contact Quickmart Supermarket</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about us.html">About us</a>
+            <a href="home.html">Shop</a>
+        </nav>
+        </header>
+
+        <section class="contact">
+            <h2>Do you have you would like us to know!</h2>
+            <p>Have question or feedback? Get in touch with us below.</p>
+
+            <div class="contact info">
+                <p><strong>Address:</strong> Kisii National Politechnic, Kisii</p>
+                <p><strong>Phone:</strong> +254 718 537 598</p>
+                <p><strong>Email:</strong> info@quickmarket.co.ke</p>
+            </div>
+            <form action="https://formspree.io/f/xblzwabq" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <footer>
+                <p>&copy;2025 Quickmart. All right reserved.</p>
+            </footer>
+        </section>
+        </style>
+    </body>
+</html>
