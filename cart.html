@@ -1,0 +1,42 @@
+<!DOCTYPE html>>
+<html lang="en">
+    <head>
+        <title>Book Product-Quickmart</title>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact</a>
+            <a href="home.html">Shop</a>
+        </nav>
+        <style>
+ body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(102, 30, 196);
+                margin: 0;
+                padding: 0;
+     }
+                </style>
+    </head>
+    <h1>Book Your Product</h1>
+    <form id="bookingForm">
+        <label>Product:</label>
+        <input type="text" id="productName" placeholder="Product name" readonly></br></br>
+        <label>  Name                                                 :</label>
+        <input type="text" id="customerName" placeholder="Customer name" readonly></br></br>
+        <label>   Phone                                                :</label>
+        <input type="tel" id="customerPhoneNumber"  placeholder="Phone number"></br></br>
+        <label>Address:</label>
+        <input type="text" id="customerAddress"placeholder="Customer address" readonly></textarea></br></br>
+        <button type="submit">Submit Booking</button>
+    </form>
+    <script>
+        document.getElementById("productName").value=localStorage.getItem("bookedProduct");
+        document.getElementById("bookingForm").addEventListener("submit",function(e){
+        e.preventDefault();
+        alert("Booking sent succesfully!we'll contact you soon.");
+        localStorage.clear();
+        window.location.href="index.html";
+    })
+    </script>
+</html>

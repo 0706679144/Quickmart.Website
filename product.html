@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title><b>Quickmart product</b></title>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="home.html">Shop</a>
+            <a href="cart.html">Cart</a>
+
+        </nav>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(220, 164, 20);
+                margin: 0;
+                padding: 0;
+     }
+                </style>
+    </head>>
+    <body>
+        <h1>Quickmart Supermarket Product</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="image/rice.jpg" alt="Rice">
+                <h2>5Kg Rice</h2>
+                <p>Ksh 850</p>
+                <button onclick="bookProduct('5Kg Rice')">Book Now</button>
+            </div>
+            <div class="product">
+                <img src="image/sugar.jpg" alt="Sugar">
+                <h2>5Kg Sugar</h2>
+                <p>Ksh 900</p>
+                <button onclick="bookProduct('5Kg Sugar')">Book Now</button>
+            </div>
+            <div class="product">
+                <img src="image/mattress.jpg" alt="Mattress">
+                <h2>Mattress</h2>
+                <p>Ksh 4500</p>
+                <button onclick="bookProduct('Mattress')">Book Now</button>
+            </div>
+        </div>
+        <script>
+            function bookProduct(ProductName){
+
+                localStorage.setItem("bookProduct", ProductName);
+                window.location.href="cart.html";
+            }
+        </script>
+    </body>
+</html>
+
