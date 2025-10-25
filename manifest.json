@@ -1,0 +1,21 @@
+{
+    "name": "Squidat Supermarket",
+    "short_name": "Squidat",
+    "start_url": "index.html",
+    "display": "standa1one",
+    "background_color": "#ffffff",
+    "theme_color": "#0078D7",
+    "description": "order your product easily from Squidat Supermarket",
+    "icons": [
+        {
+            "src": "file_00000000cf04622fb0867b2b46e644a0.png",
+            "sizes": "192*192",
+            "type": "image/png"
+        },
+        {
+            "src": "file_00000000cf04622fb0867b2b46e644a0.png",
+            "size": "512*512",
+            "type": "image/png"
+        }
+    ]
+}

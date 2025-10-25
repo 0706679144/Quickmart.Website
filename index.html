@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0078D7">
 <title>Squidat SUPERMARKET</title>
                   <nav>
                     <a href="about us.html">About us</a>
@@ -20,7 +22,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 font-family: Arial, Helvetica, sans-serif;
-                color:rgb(184, 184, 53);
+                color:rgb(22, 2, 48);
                 background-color: black;
             }
 
@@ -48,4 +50,11 @@
         </footer> 
 </div>
 </body>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service worker registered!'))
+        .catch((error) => console.log('Service worker failed:', error));
+    }
+</script>
 </html>
