@@ -49,12 +49,11 @@
             <P>&copy;2025 Squidat Supermarket | Designed by <b>Errick Owino</b></Obj></P>
         </footer> 
 </div>
-</body>
-<script>
-    if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log('Service worker registered!'))
         .catch((error) => console.log('Service worker failed:', error));
-    }
+}
+</body>
 </script>
 </html>
